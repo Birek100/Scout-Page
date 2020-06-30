@@ -6,7 +6,7 @@
 .navbar {
     display: flex;
     background-color: gray;
-    min-height: 9vh;
+    min-height: 7vh;
     justify-content: space-around;
     
 }
@@ -20,11 +20,13 @@
   width: 100%;
   list-style: none;
   position: relative;
+  flex-direction: column;
+  padding: 17px 16px;
 }
 .nav-list a {
     color: yellow;
     text-align: center;
-    padding: 17px 16px;
+    
     text-decoration: none;
     font-size: 17px;
 }
@@ -37,13 +39,21 @@
 .submenu {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     //position: absolute;
     background-color: grey;
     font-size: 17px;
    
     
   }
-  
+  .submenu li {
+    padding: 17px 16px;
+    color: yellow;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+    
+  }
 
   
 
