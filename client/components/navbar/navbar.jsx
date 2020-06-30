@@ -27,13 +27,13 @@ function Navbar () {
                         <li><a href="#">ROZKAZY</a></li>
                         <li><a href="#">LINKI</a></li>
                     </ul>
-                <li><a href className="nav-item dropdown" onClick={ dropMenu }>DLA RODZICÓW</a></li>
-                        
+                <li><a href className="nav-item dropdown" onClick={ dropMenu }>DLA RODZICÓW</a>
+                    
                         <ul className={ dropClass }>
                         <li><a href="#">O NAS</a></li>
                         <li><a href="#">1% PODATKU</a></li>
                         </ul>
-                    
+                </li>   
                 <li><a href="#" className="nav-item">KONTAKT</a></li>
             </ul>
         </div>
