@@ -1,41 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
+import { Link, NavLink } from 'react-router-dom'
 
 function Navbar () {
-    const [drop, setDrop] = useState(true);
-    console.log(drop);
-    function dropMenu() {
-        setDrop(!drop);
-        console.log(drop);
-    };
-    let dropClass = drop ? "submenu-d" : "submenu";
+    const [isExpanded, setIsExpanded] = useState(false);
+    const expandMenu = useCallback(() => {
+        setIsExpanded(s => !s);
+      }, [setIsExpanded]);
+
         return (
         <div className="navbar">
-            <ul className="nav-list">
-                <li><a href="#" className="nav-item">STRONA GŁÓWNA</a></li>
-                <li><a href="#" className="nav-item">OBÓZ</a></li>
-                <li><a href className="nav-item dropdown" onClick={ dropMenu }>DRUŻYNY</a></li>
-                    <ul className="submenu-d">
-                        <li><a href="#">ZUCHY</a></li>
-                        <li><a href="#">HARCERZE</a></li>
-                        <li><a href="#">HARCERZE STARSI</a></li>
-                        <li><a href="#">WĘDROWNICY</a></li>
+            <ul className="nav__list">
+                <li className="nav__item"><a className="nav__link" href="#">STRONA GŁÓWNA</a></li>
+                <li className="nav__item"><a className="nav__link" href="#">OBÓZ</a></li>
+                <li className="nav__item"><a className="nav__link" href="#" onClick={ expandMenu }>DRUŻYNY</a>
+                    {isExpanded && (
+                    <ul className="nav__submenu">
+                        <li className="nav__item"><a className="nav__link" href="#">ZUCHY</a></li>
+                        <li className="nav__item"><a className="nav__link" href="#">HARCERZE</a></li>
+                        <li className="nav__item"><a className="nav__link" href="#">HARCERZE STARSI</a></li>
+                        <li className="nav__item"><a className="nav__link" href="#">WĘDROWNICY</a></li>
                     </ul>
-                <li><a href className="nav-item dropdown" onClick={ dropMenu }>DLA HARCERZY</a></li>
-                    <ul className="submenu-d">    
-                        <li><a href="#">UMUNDUROWANIE</a></li>
-                        <li><a href="#">REGULAMINY</a></li>
-                        <li><a href="#">ROZKAZY</a></li>
-                        <li><a href="#">LINKI</a></li>
+                    )}
+                </li>
+                <li className="nav__item"><a className="nav__link" href="#" onClick={ expandMenu }>DLA HARCERZY</a>
+                    {isExpanded && (
+                    <ul className="nav__submenu">    
+                        <li className="nav__item"><a className="nav__link" href="#">UMUNDUROWANIE</a></li>
+                        <li className="nav__item"><a className="nav__link" href="#">REGULAMINY</a></li>
+                        <li className="nav__item"><a className="nav__link" href="#">ROZKAZY</a></li>
+                        <li className="nav__item"><a className="nav__link" href="#">LINKI</a></li>
                     </ul>
-                <li><a href className="nav-item dropdown" onClick={ dropMenu }>DLA RODZICÓW</a>
-                    
-                        <ul className={ dropClass }>
-                        <li><a href="#">O NAS</a></li>
-                        <li><a href="#">1% PODATKU</a></li>
-                        </ul>
+                    )}
+                </li>
+                <li className="nav__item"><a className="nav__link" href="#" onClick={ expandMenu }>DLA RODZICÓW</a>
+                    {isExpanded && (
+                    <ul className="nav__submenu">
+                    <li className="nav__item"><a className="nav__link" href="#">O NAS</a></li>
+                    <li className="nav__item"><a className="nav__link" href="#">1% PODATKU</a></li>
+                    </ul>
+                    )}
                 </li>   
-                <li><a href="#" className="nav-item">KONTAKT</a></li>
+                <li className="nav__item"><Link className="nav__link" to="/kontakt">KONTAKT</Link></li>
             </ul>
+            <div className="nav__toggler">
+                <div className="line1" />
+                <div className="line2" />
+                <div className="line3" />
+            </div>
         </div>
     )
 }

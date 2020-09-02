@@ -39,7 +39,13 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/i,
         loader: 'file-loader'
-      }
+      },
+      {
+        test: /\.(woff|woff2|otf)$/,
+        use: {
+        loader: 'url-loader',
+        },
+      },
     ]
   },
   plugins: [

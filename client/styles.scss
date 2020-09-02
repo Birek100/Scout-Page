@@ -1,12 +1,23 @@
 @import "components/header/header";
 @import "components/navbar/navbar";
+@import "components/content/content";
+@import "components/links/links";
 
+@font-face
+{
+font-family: 'Museo300';
+src:url('./fonts/Museo-Regular-300.otf');
+}
+@font-face
+{
+font-family: 'Museo500';
+src:url('./fonts/Museo-Regular-500.otf');
+}
 
 html, body {
-    //height:100%;
     width:100%;
-    margin: 0px;
-    //background-color: white; 
+    margin: 0px; 
+    font-family: 'Museo300'
 }
 
 

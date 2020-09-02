@@ -6,59 +6,61 @@
 .navbar {
     display: flex;
     background-color: gray;
-    height: 54px;
+    height: 55px;
     justify-content: space-around;
-};
-.nav-list {
-  display: flex;
-  width: 80%;
-  justify-content: space-around;
-};
-.nav-list li {
-  display: flex;
-  list-style: none;
-  position: relative;
-  flex-direction: column;
-  
 }
-.nav-list a {
-    color: yellow;
-    //text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 17px 16px;
-};
-.nav-list a:hover {
-    background-color: yellowgreen;
-};
-.submenu-d {
-  display: none;
-};
-.submenu {
+.nav__submenu {
     margin-top: 0;
     display: flex;
     flex-direction: column;
     background-color: red;
-    font-size: 17px;
-   
     
-  };
-  .submenu li {
-    margin-top: 0;
-    color: yellow;
-    text-align: center;
-    text-decoration: none;
-  };
-
-  .submenu a {
-    padding: 17px 16px;
-  };
+    
+}
+.nav__list {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+.nav__item {
+  display: flex;
+  list-style: none;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
   
+  
+  
+}
+.nav__link {
+    color: yellow;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 17px;
+    display: block;
+}
+.nav__link:hover {
+  background-color: yellowgreen;
+}
 
-
-  .toggler div {
+.nav__toggler {
+  padding: 12px;
+}
+  .nav__toggler div {
     width: 25px;
     height: 3px;
     margin: 5px;
     background-color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (max-width: 400px) {
+  .nav__toggler div {
+    display: flex;
+  }
+  .nav__link {
+    display: none;
+  }
 }

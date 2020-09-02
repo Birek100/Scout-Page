@@ -1,0 +1,25 @@
+.content {
+    width: 70%;
+    float: left;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: flex-start;
+    margin-top: 0;
+    justify-content: center;
+
+};
+.posts {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .post {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        padding: 10px 10px;
+        border-style: solid;
+        margin-bottom: 25px;
+    
+        //border: 2px;
+    }
+    
+}
