@@ -9,32 +9,31 @@ function Navbar () {
 
         return (
         <div className="navbar">
-            <ul className="nav__list">
+            <ul className={isExpanded ? "nav__list--active"  : "nav__list"}>
                 <li className="nav__item"><a className="nav__link" href="#">STRONA GŁÓWNA</a></li>
                 <li className="nav__item"><a className="nav__link" href="#">OBÓZ</a></li>
-                <li className="nav__item"><a className="nav__link" href="#" onClick={ expandMenu }>DRUŻYNY</a>
-                    {isExpanded && (
+                <li className="nav__item"><a className="nav__link" href="#">DRUŻYNY</a>
                     <ul className="nav__submenu">
                         <li className="nav__item"><a className="nav__link" href="#">ZUCHY</a></li>
                         <li className="nav__item"><a className="nav__link" href="#">HARCERZE</a></li>
                         <li className="nav__item"><a className="nav__link" href="#">HARCERZE STARSI</a></li>
                         <li className="nav__item"><a className="nav__link" href="#">WĘDROWNICY</a></li>
                     </ul>
-                    )}
+                   
                 </li>
-                <li className="nav__item"><a className="nav__link" href="#" onClick={ expandMenu }>DLA HARCERZY</a>
-                    {isExpanded && (
+                <li className="nav__item"><a className="nav__link" href="#">DLA HARCERZY</a>
+                    
                     <ul className="nav__submenu">    
                         <li className="nav__item"><a className="nav__link" href="#">UMUNDUROWANIE</a></li>
                         <li className="nav__item"><a className="nav__link" href="#">REGULAMINY</a></li>
                         <li className="nav__item"><a className="nav__link" href="#">ROZKAZY</a></li>
                         <li className="nav__item"><a className="nav__link" href="#">LINKI</a></li>
                     </ul>
-                    )}
+                    
                 </li>
-                <li className="nav__item"><a className="nav__link" href="#" onClick={ expandMenu }>DLA RODZICÓW</a>
+                <li className="nav__item"><a className="nav__link" href="#">DLA RODZICÓW</a>
                     {isExpanded && (
-                    <ul className="nav__submenu">
+                    <ul className="nav__none">
                     <li className="nav__item"><a className="nav__link" href="#">O NAS</a></li>
                     <li className="nav__item"><a className="nav__link" href="#">1% PODATKU</a></li>
                     </ul>
@@ -42,7 +41,7 @@ function Navbar () {
                 </li>   
                 <li className="nav__item"><Link className="nav__link" to="/kontakt">KONTAKT</Link></li>
             </ul>
-            <div className="nav__toggler">
+            <div className="nav__toggler" onClick={expandMenu}>
                 <div className="line1" />
                 <div className="line2" />
                 <div className="line3" />
