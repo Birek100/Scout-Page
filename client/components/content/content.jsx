@@ -4,15 +4,15 @@ import React from 'react';
 function Content () {
     return (
         <div className="content">
-            <div className="posts">
-                <div className="post">
+            <div className="content__posts">
+                <div className="content__post">
                     <h1>WRACAMY NA ZBIÓRKI</h1>
                     
                     <p>Stopniowo wracamy do zbiórek, które będziemy przeprowadzać w reżimie sanitarnym.
                     Poniżej przedstawiamy najważniejsze zasady, które będą obowiązywać. 
                     Każdy drużynowy będzie się osobiście kontaktować z rodzicami zuchów i harcerzy z informacją o planowanych zbiórkach.</p>
                 </div>
-                <div className="post">
+                <div className="content__post">
                     <h1>OBÓZ 2020 ODWOŁANY</h1>
                     
                     <p>Sytuacja epidemiologiczna oraz powiązana z nią sytuacja gospodarcza w Polsce dotyka nas wszystkich, 
@@ -21,6 +21,26 @@ function Content () {
                         Po długich naradach z kadrą obozu doszliśmy do wniosku, iż nie będziemy w stanie przeprowadzić dla Was 
                         obozu w formie do której wszyscy jesteśmy przyzwyczajeni. Troska o zdrowie oraz dobro zuchów i harcerzy 
                         jest dla nas priorytetem.</p>
+                </div>
+                <div className="content__post">
+                    <h1>POST3</h1>
+                    
+                    <p>BLE BLE BLE BLE</p>
+                </div>
+                <div className="content__post">
+                    <h1>POST4</h1>
+                    
+                    <p>BLE BLE BLE BLE</p>
+                </div>
+                <div className="content__post">
+                    <h1>POST5</h1>
+                    
+                    <p>BLE BLE BLE BLE</p>
+                </div>
+                <div className="content__post">
+                    <h1>POST6</h1>
+                    
+                    <p>BLE BLE BLE BLE</p>
                 </div>
             </div>
         </div>

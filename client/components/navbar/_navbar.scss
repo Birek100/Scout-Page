@@ -24,9 +24,6 @@
 
 .nav__list {
   display: flex;
-  &--active {
-    display: flex;
-  }
 }
 .nav__item {
   display: flex;
@@ -51,7 +48,6 @@
 
 .nav__toggler {
   padding: 12px;
-
 }
   .nav__toggler div {
     width: 25px;
@@ -62,16 +58,22 @@
     flex-direction: column;
     justify-content: space-around;
 }
-.nav__toggler:hover {
-  cursor: pointer;
-}
-.nav__none {
-  display: none;
-}
+
 @media (max-width: 745px) {
+
+  .navbar {
+    justify-content: flex-end;
+  }
+
+  .nav__toggler {
+    margin-right: 30px;
+  }
+  .nav__toggler:hover {
+    cursor: pointer;
+  }
   .nav__toggler div {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
   }
 
   .nav__list {
@@ -93,12 +95,12 @@
   .nav__link {
     width: 100%;
   }
-  .nav__submenu{
+  .nav__submenu--active{
     width:100%;
     position: relative;
     background-color: red;
     z-index: 1;
     margin-top: 0;
   }
-  .nav__item:hover .nav__submenu {display: block;}
+  .nav__item:hover .nav__submenu {display: none;}
 }
