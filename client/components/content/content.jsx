@@ -1,47 +1,36 @@
 import React from 'react';
-//import noImage from '../../../images/noimage.jpg';
 
 function Content () {
     return (
         <div className="content">
             <div className="content__posts">
                 <div className="content__post">
-                    <h1>WRACAMY NA ZBIÓRKI</h1>
-                    
-                    <p>Stopniowo wracamy do zbiórek, które będziemy przeprowadzać w reżimie sanitarnym.
-                    Poniżej przedstawiamy najważniejsze zasady, które będą obowiązywać. 
-                    Każdy drużynowy będzie się osobiście kontaktować z rodzicami zuchów i harcerzy z informacją o planowanych zbiórkach.</p>
+                    <img src="./static/images/no-image.jpg" className="content__image" />
+                    <h2 className="content__header">WRACAMY NA ZBIÓRKI</h2>
                 </div>
                 <div className="content__post">
-                    <h1>OBÓZ 2020 ODWOŁANY</h1>
-                    
-                    <p>Sytuacja epidemiologiczna oraz powiązana z nią sytuacja gospodarcza w Polsce dotyka nas wszystkich, 
-                        w tym również kadrę naszego obozu. 
-                        Z przykrością informujemy iż tegoroczna Harcerska Akcja Letnia 2020 nie odbędzie się. 
-                        Po długich naradach z kadrą obozu doszliśmy do wniosku, iż nie będziemy w stanie przeprowadzić dla Was 
-                        obozu w formie do której wszyscy jesteśmy przyzwyczajeni. Troska o zdrowie oraz dobro zuchów i harcerzy 
-                        jest dla nas priorytetem.</p>
+                    <img src="./static/images/no-image.jpg" className="content__image" />
+                    <h2 className="content__header">OBÓZ 2020 ODWOŁANY</h2>
                 </div>
                 <div className="content__post">
-                    <h1>POST3</h1>
-                    
-                    <p>BLE BLE BLE BLE</p>
+                    <img src="./static/images/no-image.jpg" className="content__image" />
+                    <h2 className="content__header">POST3</h2>
                 </div>
                 <div className="content__post">
-                    <h1>POST4</h1>
-                    
-                    <p>BLE BLE BLE BLE</p>
+                    <img src="./static/images/no-image.jpg" className="content__image" />
+                    <h2 className="content__header">POST4</h2>
                 </div>
                 <div className="content__post">
-                    <h1>POST5</h1>
-                    
-                    <p>BLE BLE BLE BLE</p>
+                    <img src="./static/images/no-image.jpg" className="content__image" />
+                    <h2 className="content__header">POST5</h2>
                 </div>
                 <div className="content__post">
-                    <h1>POST6</h1>
-                    
-                    <p>BLE BLE BLE BLE</p>
+                    <img src="./static/images/no-image.jpg" className="content__image" />
+                    <h2 className="content__header">POST6</h2>
                 </div>
+            </div>
+            <div className="content__more">
+                <p>Pokaż więcej</p>
             </div>
         </div>
     )

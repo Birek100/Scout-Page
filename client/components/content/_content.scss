@@ -2,10 +2,10 @@
     width: 80%;
     float: left;
     background-color: burlywood;
+    min-height: 100%;
     margin-top: 0;
     &__posts {
         margin-top: 25px;
-        margin-bottom: 25px;
         text-align: center;
     }
     &__post {
@@ -13,12 +13,28 @@
         text-align: center;
         width: 30%;
         min-width: 220px;
-        height: 300px;
+        height: 350px;
         margin: 10px;
         padding: 10px 10px;
         border-style: solid;
         margin-bottom: 25px;
         overflow: hidden;
+    }
+    &__post:hover {
+        cursor: pointer;
+    }
+    &__image {
+        margin-top: 10px;
+        width: 90%;
+        height: auto;
+    }
+    &__header {
+        margin-top: 20px;
+    }
+    &__more {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 };
 

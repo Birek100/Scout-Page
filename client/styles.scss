@@ -2,6 +2,7 @@
 @import "components/navbar/navbar";
 @import "components/content/content";
 @import "components/links/links";
+@import "components/kontakt/kontakt";
 
 @font-face
 {
@@ -17,7 +18,7 @@ src:url('./fonts/Museo-Regular-500.otf');
 html, body {
     width:100%;
     margin: 0px; 
-    font-family: 'Museo300'
+    font-family: 'Museo300';
 }
 
 

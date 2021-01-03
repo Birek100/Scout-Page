@@ -15,6 +15,7 @@ class App extends Component {
               <Navbar />
               <Route exact path="/" component={Content} /> 
               <Route exact path="/kontakt" component={Kontakt} />
+              
               <Links />
             </div>
           </BrowserRouter>
