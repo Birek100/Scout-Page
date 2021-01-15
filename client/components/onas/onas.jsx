@@ -11,8 +11,8 @@ function Onas() {
             <p>
               Związek Harcerstwa Polskiego to Organizacja Pożytku Publicznego
             </p>
-            </div>
-            <div className="content__article">
+          </div>
+          <div className="content__article">
             <p>
               Związek Harcerstwa Polskiego jest największą, liczącą 125 297
               członków, organizacją wychowawczą dzieci i młodzieży w Polsce. Od
@@ -24,13 +24,17 @@ function Onas() {
               apolityczną. Wychowuje młodych ludzi na prawych, aktywnych i
               odpowiedzialnych obywateli w duchu wartości zawartych w Prawie
               Harcerskim.
-            </p></div>
-            <div className="content__article"><p>
+            </p>
+          </div>
+          <div className="content__article">
+            <p>
               Misją Związku Harcerstwa Polskiego jest wychowanie młodego
               człowieka, czyli wspieranie go we wszechstronnym rozwoju i
               kształtowaniu charakteru przez stawianie wyzwań.
-            </p></div>
-            <div className="content__article"><p>
+            </p>
+          </div>
+          <div className="content__article">
+            <p>
               ZHP to nie tylko organizacja dzieci i młodzieży, to przede
               wszystkim ruch społeczny kształtujący postawy i charaktery. ZHP
               wspiera wychowanie dzieci i młodzieży zgodnie z harcerskimi
@@ -39,29 +43,34 @@ function Onas() {
               zapisane w Obietnicy i Prawie Zucha oraz Przyrzeczeniu i Prawie
               Harcerskim odnajdujemy w tworzonej przez dziesiątki lat kulturze
               organizacji.
-            </p></div>
-            <div className="content__article">
-              <h2>Składki członkowskie</h2>
-              <p>Zgodnie ze Statutem Związku Harcerstwa Polskiego wszyscy członkowie ZHP zobowiązani są do 
-                wnoszenia na rzecz Związku składek członkowskich.</p>
-
-            </div>
-            <div className="content__article">
-            <span className="bold"><span className="red"><p>Składka miesięczna wynosi 12 zł z podziałem:</p></span>
-            <p>2 zł dla Głównej Kwatery</p>
-            <p>5 zł dla Chorągwi ZHP</p>
-            <p>3 zł dla Hufca ZHP</p>
-            <p>2 zł dla drużyny</p>
+            </p>
+          </div>
+          <div className="content__article">
+            <h2>Składki członkowskie</h2>
+            <p>
+              Zgodnie ze Statutem Związku Harcerstwa Polskiego wszyscy
+              członkowie ZHP zobowiązani są do wnoszenia na rzecz Związku
+              składek członkowskich.
+            </p>
+          </div>
+          <div className="content__article">
+            <span className="bold">
+              <span className="red">
+                <p>Składka miesięczna wynosi 12 zł z podziałem:</p>
+              </span>
+              <p>2 zł dla Głównej Kwatery</p>
+              <p>5 zł dla Chorągwi ZHP</p>
+              <p>3 zł dla Hufca ZHP</p>
+              <p>2 zł dla drużyny</p>
             </span>
-            </div>
-            <div className="content__article">
+          </div>
+          <div className="content__article">
             <h2>
               Składkę należy wpłacać kwartalnie do 20 dnia ostatniego miesiąca
               kwartału do drużynowego.
             </h2>
           </div>
           <div className="content__article">
-            
             <p>
               • poprzez 1% podatku dochodowego – ZHP jest organizacją pożytku
               publicznego;

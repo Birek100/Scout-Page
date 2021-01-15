@@ -56,73 +56,105 @@ function Umundurowanie() {
             <div className="content__image">
               <img src="./static/images/mundury.jpg" />
             </div>
-            <p>1. <span className="bold">Bluza mundurowa</span> wg wzoru ZHP.</p>
+            <p>
+              1. <span className="bold">Bluza mundurowa</span> wg wzoru ZHP.
+            </p>
             <span className="red bold">
-            <p>Bluzy mundurowe nosi się wypuszczone w spodnie lub spódnicę!</p></span>
+              <p>
+                Bluzy mundurowe nosi się wypuszczone w spodnie lub spódnicę!
+              </p>
+            </span>
             <p>Rękawy powinny być podwinięte powyżej łokcia.</p>
           </div>
           <div className="content__article">
-            <p>2. <span className="bold">Spódnica mundurowa</span> wg wzoru ZHP </p>
-            <p>lub <span className="bold">Spodenki mundurowe</span> wg wzoru ZHP </p>
-            <span className="bold"><p>W Chełmku drużyny przyjęły spódnice mundurowe dla dziewcząt.</p></span>
-          </div>
-          <div className="content__article">
             <p>
-              3. <span className="bold">Spodnie długie</span> granatowe. Dopuszcza się noszenie długich spodni
-              czarnych, granatowych, jeansy tylko ciemno niebieskie jednolite i
-              bez zdobień.{" "}
+              2. <span className="bold">Spódnica mundurowa</span> wg wzoru ZHP{" "}
             </p>
-            <p><span className="red bold">Niedopuszczalne są:</span></p>
-            <span className="red">
             <p>
-              - jeansy z kolorowymi naszywkami, dziurami, 3/4 oraz
-              jasnoniebieskie
+              lub <span className="bold">Spodenki mundurowe</span> wg wzoru ZHP{" "}
             </p>
-            <p>- spodnie dresowe</p>
-            <p>
-              - legginsy zarówno czarne jak i kolorowe (legginsy z cekinowymi
-              gwiazdkami lub Elzą są bezwzględnie zabronione)
-            </p>
+            <span className="bold">
+              <p>
+                W Chełmku drużyny przyjęły spódnice mundurowe dla dziewcząt.
+              </p>
             </span>
           </div>
           <div className="content__article">
             <p>
-              4. <span className="bold">Pas</span> parciany wg wzoru ZHP (harcerki czarny, harcerze zielony)
+              3. <span className="bold">Spodnie długie</span> granatowe.
+              Dopuszcza się noszenie długich spodni czarnych, granatowych,
+              jeansy tylko ciemno niebieskie jednolite i bez zdobień.{" "}
             </p>
             <p>
-              Pas ma być w szlufkach w spodniach i jest <span className="bold">obowiązkowo noszony do
-              bluzy mundurowej.</span>{" "}
+              <span className="red bold">Niedopuszczalne są:</span>
+            </p>
+            <span className="red">
+              <p>
+                - jeansy z kolorowymi naszywkami, dziurami, 3/4 oraz
+                jasnoniebieskie
+              </p>
+              <p>- spodnie dresowe</p>
+              <p>
+                - legginsy zarówno czarne jak i kolorowe (legginsy z cekinowymi
+                gwiazdkami lub Elzą są bezwzględnie zabronione)
+              </p>
+            </span>
+          </div>
+          <div className="content__article">
+            <p>
+              4. <span className="bold">Pas</span> parciany wg wzoru ZHP
+              (harcerki czarny, harcerze zielony)
+            </p>
+            <p>
+              Pas ma być w szlufkach w spodniach i jest{" "}
+              <span className="bold">
+                obowiązkowo noszony do bluzy mundurowej.
+              </span>{" "}
             </p>
           </div>
           <div className="content__article">
-            <p>5. <span className="bold">Getry i wywijki</span></p>
-            <span className="bold"><p>W Chełmku przyjęto czarne getry z dwoma białymi paskami.</p></span>
+            <p>
+              5. <span className="bold">Getry i wywijki</span>
+            </p>
+            <span className="bold">
+              <p>W Chełmku przyjęto czarne getry z dwoma białymi paskami.</p>
+            </span>
             <p>
               Kolor wywijek ustalają drużyny (Bór - zielone, Ogniste płomyki -
               czerwone)
             </p>
           </div>
           <div className="content__article">
-            <p>6. <span className="bold">Nakrycie głowy</span></p>
-            <span className="bold"><p>W Chełmku przyjęto czarne berety ze srebrną lilijką</p></span>
-          </div>
-          <div className="content__article">
-            <p>7. Ciemne <span className="bold">buty trekingowe lub adidasy</span> (np. brązowe, czarne)</p>
-            <span className="red bold"><p>Zabronione są:</p></span>
-            <span className="red">
-            <p>- kolorowe trampki</p>
-            <p>- białe i jasne buty</p>
-            <p>- sandały</p>
-            <p>- klapki</p>
-            <p>- baleriny</p>
+            <p>
+              6. <span className="bold">Nakrycie głowy</span>
+            </p>
+            <span className="bold">
+              <p>W Chełmku przyjęto czarne berety ze srebrną lilijką</p>
             </span>
           </div>
           <div className="content__article">
             <p>
-            <span className="bold">SPRAWNOŚCI:</span> Oznaki sprawności naszywa się lub wyszywa, poczynając
-              od linii poziomej 8 cm poniżej miejsca wszycia rękawa na barku.
-              Oznaki sprawności naszywa się lub wyszywa poczynając od góry
-              rękawa.
+              7. Ciemne{" "}
+              <span className="bold">buty trekingowe lub adidasy</span> (np.
+              brązowe, czarne)
+            </p>
+            <span className="red bold">
+              <p>Zabronione są:</p>
+            </span>
+            <span className="red">
+              <p>- kolorowe trampki</p>
+              <p>- białe i jasne buty</p>
+              <p>- sandały</p>
+              <p>- klapki</p>
+              <p>- baleriny</p>
+            </span>
+          </div>
+          <div className="content__article">
+            <p>
+              <span className="bold">SPRAWNOŚCI:</span> Oznaki sprawności
+              naszywa się lub wyszywa, poczynając od linii poziomej 8 cm poniżej
+              miejsca wszycia rękawa na barku. Oznaki sprawności naszywa się lub
+              wyszywa poczynając od góry rękawa.
             </p>
           </div>
           <div className="content__article">
@@ -147,10 +179,13 @@ function Umundurowanie() {
             <img src="./static/images/chuchu.png" />
           </div>
           <div className="content__article">
-          <p>
-              Według regulaminu mundurowego <span className="bold underline">"Każdy członek ZHP ma obowiązek
-              dbania o mundur i utrzymywania go w należytym porządku."
-              </span></p>
+            <p>
+              Według regulaminu mundurowego{" "}
+              <span className="bold underline">
+                "Każdy członek ZHP ma obowiązek dbania o mundur i utrzymywania
+                go w należytym porządku."
+              </span>
+            </p>
           </div>
           <div className="content__article">
             <p>
