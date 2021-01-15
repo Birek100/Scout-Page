@@ -1,36 +1,41 @@
+html,
+body {
+  background-color: $gray-bright;
+}
+
 .links {
-    background-color: cadetblue;
-    float: right;
-    display: flex;
-    width:20%;
-    flex-direction: flex-end;
-    margin-top: 0;
-    justify-content: center;
-    text-align: center;
-    .links-content {
-        margin-top: 25px;
-        .link {
-            margin-top: 15px;
-            margin-bottom: 15px;
-            img {
-            padding: 15px;
-            }
-        }
+  float: right;
+  display: flex;
+  width: 20%;
+  flex-direction: flex-end;
+  margin-top: 0;
+  justify-content: center;
+  text-align: center;
+  &__content {
+    margin-top: $margin-large;
+    font-size: $font-content;
+  }
+  &__article {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    img {
+      padding: $margin-small;
     }
+  }
 }
-.hufiec-zielony{
-    width: 30%;
-    height: auto;
+.hufiec-zielony {
+  width: 70%;
+  height: auto;
 }
-.zhp-krakow{
-    width: 25%;
-    height: auto;
+.zhp-krakow {
+  width: 40%;
+  height: auto;
 }
-.zhp-zielony{
-    width: 30%;
-    height: auto;
+.zhp-zielony {
+  width: 70%;
+  height: auto;
 }
-.facebook-logo{
-    width: 25%;
-    height: auto;
+.facebook-logo {
+  width: 40%;
+  height: auto;
 }

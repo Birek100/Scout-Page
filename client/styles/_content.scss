@@ -1,0 +1,58 @@
+.wrapper {
+  width: 80%;
+  float: left;
+  background-color: #f2f2f2;
+  min-height: 80%;
+  margin-top: 0;
+  &__inside {
+    background-color: white;
+    margin: 3%;
+  }
+}
+.content {
+  padding: $margin-large;
+  background-color: white;
+  text-align: left;
+  font-size: $font-content;
+  min-height: 80%;
+  &__header {
+    margin: $margin-small;
+    text-align: center;
+  }
+  &__image {
+    text-align: center;
+    margin-top: $margin-medium;
+    margin-bottom: $margin-medium;
+  }
+  &__article {
+    display: block;
+    margin: $margin-large;
+    a {
+      color: #78a22f;
+    }
+    h2 {
+      margin-top: $margin-small;
+      margin-bottom: $margin-small;
+    }
+  }
+  &__facebook {
+    margin: $margin-large;
+    text-align: center;
+    img {
+      width: auto;
+      height: 17%;
+    }
+  }
+}
+.red {
+    color: red;
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+text-decoration: underline;
+}
