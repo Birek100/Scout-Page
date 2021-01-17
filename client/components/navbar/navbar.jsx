@@ -16,6 +16,11 @@ function Navbar() {
     setIsExpanded(s => !s);
   }, [setIsExpanded]);
 
+  const closeMenu = useCallback(() => {
+    setIsExpanded(false);
+    setMenu(SUBMENU[0]);
+  }, [setIsExpanded]);
+
   const [menu, setMenu] = useState(SUBMENU[0]);
 
   const menu1 = useCallback(
@@ -74,39 +79,65 @@ function Navbar() {
         responsivenessQueries.isDesktop()) && (
         <ul className="nav__list">
           <li className="nav__item">
-            <Link className="nav__link" to="/">
+            <Link
+              className="nav__link"
+              to="/"
+              onClick={responsivenessQueries.isMobile() ? closeMenu : null}
+            >
               STRONA GŁÓWNA
             </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/oboz">
+            <Link
+              className="nav__link"
+              to="/oboz"
+              onClick={responsivenessQueries.isMobile() ? closeMenu : null}
+            >
               OBÓZ
             </Link>
           </li>
           <li className="nav__item">
-            <a
+            <Link
               className="nav__link"
-              href="#"
-              onClick={responsivenessQueries.isMobile() ? menu1 : undefined}
+              to="druzyny"
+              onClick={responsivenessQueries.isMobile() ? menu1 : null}
             >
               DRUŻYNY
-            </a>
+            </Link>
             {((navbarQueries.isOpened(SUBMENU[1], menu) &&
               responsivenessQueries.isMobile()) ||
               responsivenessQueries.isDesktop()) && (
               <ul className="nav__submenu">
                 <li className="nav__item">
-                  <Link className="nav__link" to="/zuchy">
+                  <Link
+                    className="nav__link"
+                    to="/zuchy"
+                    onClick={
+                      responsivenessQueries.isMobile() ? closeMenu : null
+                    }
+                  >
                     ZUCHY
                   </Link>
                 </li>
                 <li className="nav__item">
-                  <Link className="nav__link" to="/harcerze">
+                  <Link
+                    className="nav__link"
+                    to="/harcerze"
+                    onClick={
+                      responsivenessQueries.isMobile() ? closeMenu : null
+                    }
+                  >
                     HARCERZE
                   </Link>
                 </li>
                 <li className="nav__item">
-                  <Link className="nav__link" to="/starsiharcerze">
+                  <Link
+                    className="nav__link"
+                    to="/starsiharcerze"
+                    onClick={
+                      responsivenessQueries.isMobile() ? closeMenu : null
+                    }
+                  >
                     HARCERZE STARSI
                   </Link>
                 </li>
@@ -119,24 +150,36 @@ function Navbar() {
             )}
           </li>
           <li className="nav__item">
-            <a
+            <Link
               className="nav__link"
-              href="#"
-              onClick={responsivenessQueries.isMobile() ? menu2 : undefined}
+              to="dlaharcerzy"
+              onClick={responsivenessQueries.isMobile() ? menu2 : null}
             >
               DLA HARCERZY
-            </a>
+            </Link>
             {((navbarQueries.isOpened(SUBMENU[2], menu) &&
               responsivenessQueries.isMobile()) ||
               responsivenessQueries.isDesktop()) && (
               <ul className="nav__submenu">
                 <li className="nav__item">
-                  <Link className="nav__link" to="/umundurowanie">
+                  <Link
+                    className="nav__link"
+                    to="/umundurowanie"
+                    onClick={
+                      responsivenessQueries.isMobile() ? closeMenu : null
+                    }
+                  >
                     UMUNDUROWANIE
                   </Link>
                 </li>
                 <li className="nav__item">
-                  <Link className="nav__link" to="/sprawnosci">
+                  <Link
+                    className="nav__link"
+                    to="/sprawnosci"
+                    onClick={
+                      responsivenessQueries.isMobile() ? closeMenu : null
+                    }
+                  >
                     STOPNIE I SPRAWNOŚCI
                   </Link>
                 </li>
@@ -149,7 +192,13 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav__item">
-                  <Link className="nav__link" to="/dopobrania">
+                  <Link
+                    className="nav__link"
+                    to="/dopobrania"
+                    onClick={
+                      responsivenessQueries.isMobile() ? closeMenu : null
+                    }
+                  >
                     DO POBRANIA
                   </Link>
                 </li>
@@ -157,24 +206,36 @@ function Navbar() {
             )}
           </li>
           <li className="nav__item">
-            <a
+            <Link
               className="nav__link"
-              href="#"
-              onClick={responsivenessQueries.isMobile() ? menu3 : undefined}
+              to="dlarodzicow"
+              onClick={responsivenessQueries.isMobile() ? menu3 : null}
             >
               DLA RODZICÓW
-            </a>
+            </Link>
             {((navbarQueries.isOpened(SUBMENU[3], menu) &&
               responsivenessQueries.isMobile()) ||
               responsivenessQueries.isDesktop()) && (
               <ul className="nav__submenu">
                 <li className="nav__item">
-                  <Link className="nav__link" to="/onas">
+                  <Link
+                    className="nav__link"
+                    to="/onas"
+                    onClick={
+                      responsivenessQueries.isMobile() ? closeMenu : null
+                    }
+                  >
                     O NAS
                   </Link>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#">
+                  <a
+                    className="nav__link"
+                    href="#"
+                    onClick={
+                      responsivenessQueries.isMobile() ? closeMenu : null
+                    }
+                  >
                     1% PODATKU
                   </a>
                 </li>
@@ -182,7 +243,11 @@ function Navbar() {
             )}
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/kontakt">
+            <Link
+              className="nav__link"
+              to="/kontakt"
+              onClick={responsivenessQueries.isMobile() ? closeMenu : null}
+            >
               KONTAKT
             </Link>
           </li>

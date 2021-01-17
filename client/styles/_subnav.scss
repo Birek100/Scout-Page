@@ -1,0 +1,22 @@
+.subnav {
+  padding: $margin-large;
+  background-color: white;
+  text-align: center;
+  font-size: $font-content;
+  min-height: 80%;
+
+  &__header {
+    margin: $margin-small;
+  }
+  &__article {
+    display: block;
+    margin: $margin-very-large;
+  }
+  &__link {
+    font-size: 30px;
+    color: #78a22f;
+  }
+  &__content {
+    margin-top: $margin-very-large;
+  }
+}

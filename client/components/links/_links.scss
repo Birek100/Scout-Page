@@ -16,10 +16,13 @@ body {
     font-size: $font-content;
   }
   &__article {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     img {
       padding: $margin-small;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -28,7 +31,7 @@ body {
   height: auto;
 }
 .zhp-krakow {
-  width: 40%;
+  width: 55%;
   height: auto;
 }
 .zhp-zielony {

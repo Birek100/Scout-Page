@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 
-function Content() {
+function Main() {
+  const [mainIsExpanded, setMainIsExpanded] = useState(false);
+  const expandMain = useCallback(() => {
+    setMainIsExpanded(true);
+  }, [setMainIsExpanded]);
+
   return (
     <div className="main">
       <div className="main__posts">
@@ -58,12 +63,48 @@ function Content() {
           </div>
           <h2 className="main__header">Indywidualna gra 11 listopada</h2>
         </div>
-      </div>
-      <div className="main__more">
-        <p>Pokaż więcej</p>
+        {mainIsExpanded || (
+          <div className="main__more">
+            <p onClick={expandMain}>Więcej postów</p>
+          </div>
+        )}
+        {mainIsExpanded && (
+          <div className="main-posts">
+            <div className="main__post">
+              <div className="main__image-container">
+                <img
+                  src="./static/images/post_images/zbiorki_online.png"
+                  className="main__image"
+                />
+              </div>
+              <h2 className="main__header">Zbiórki online</h2>
+            </div>
+            <div className="main__post">
+              <div className="main__image-container">
+                <img
+                  src="./static/images/post_images/powrot_zbiorek.jpg"
+                  className="main__image"
+                />
+              </div>
+              <h2 className="main__header">Powrót zdalnych zbiórek</h2>
+            </div>
+            <div className="main__post">
+              <div className="main__image-container">
+                <img
+                  src="./static/images/post_images/pierwsza_pomoc.jpg"
+                  className="main__image"
+                />
+              </div>
+              <h2 className="main__header">Kurs pierwszej pomocy</h2>
+            </div>
+            <div className="main__more">
+              <p>Przejdź do archiwum</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
-export default Content;
+export default Main;

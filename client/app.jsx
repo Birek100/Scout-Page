@@ -14,6 +14,9 @@ import Umundurowanie from "./components/umundurowanie/umundurowanie.jsx";
 import Sprawnosci from "./components/sprawnosci/sprawnosci.jsx";
 import Onas from "./components/onas/onas.jsx";
 import Footer from "./components/footer/footer.jsx";
+import Druzyny from "./components/subnav/druzyny.jsx";
+import DlaHarcerzy from "./components/subnav/dlaharcerzy.jsx";
+import DlaRodzicow from "./components/subnav/dlarodzicow.jsx";
 
 class App extends Component {
   render() {
@@ -32,6 +35,9 @@ class App extends Component {
           <Route exact path="/umundurowanie" component={Umundurowanie} />
           <Route exact path="/sprawnosci" component={Sprawnosci} />
           <Route exact path="/onas" component={Onas} />
+          <Route exact path="/druzyny" component={Druzyny} />
+          <Route exact path="/dlaharcerzy" component={DlaHarcerzy} />
+          <Route exact path="/dlarodzicow" component={DlaRodzicow} />
           <Links />
           <Footer />
         </div>

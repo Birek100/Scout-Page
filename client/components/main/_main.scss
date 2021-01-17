@@ -39,8 +39,12 @@
     margin-right: 3%;
   }
   &__more {
-    text-align: center;
+    width: 200px;
+    margin: auto;
     font-size: 20px;
     margin-bottom: 20px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
