@@ -74,7 +74,7 @@ function Navbar() {
   }, [window.innerWidth]);
 
   return (
-    <div className="navbar">
+    <div className="nav">
       {((isExpanded && responsivenessQueries.isMobile()) ||
         responsivenessQueries.isDesktop()) && (
         <ul className="nav__list">
@@ -99,7 +99,7 @@ function Navbar() {
           <li className="nav__item">
             <Link
               className="nav__link"
-              to="druzyny"
+              to="/druzyny"
               onClick={responsivenessQueries.isMobile() ? menu1 : null}
             >
               DRUŻYNY
@@ -142,9 +142,9 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#">
+                  <Link className="nav__link" to="/wedrownicy">
                     WĘDROWNICY
-                  </a>
+                  </Link>
                 </li>
               </ul>
             )}
@@ -229,15 +229,15 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav__item">
-                  <a
+                  <Link
                     className="nav__link"
-                    href="#"
+                    to="podatku"
                     onClick={
                       responsivenessQueries.isMobile() ? closeMenu : null
                     }
                   >
                     1% PODATKU
-                  </a>
+                  </Link>
                 </li>
               </ul>
             )}
