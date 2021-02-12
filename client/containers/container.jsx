@@ -1,10 +1,8 @@
-
-import { connect } from 'react-redux';
-import { useSelector, useDispatch } from 'react-redux';
-import { modalTrue, modalFalse } from '../actions/action';
+import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { modalTrue, modalFalse } from "../actions/action";
 //import Post9 from '../components/posts/post9.jsx';
-import App from '../app.jsx';
-
+import App from "../app.jsx";
 
 /*const mapStateToProps = (state) => ({
   modalState: state.modalState

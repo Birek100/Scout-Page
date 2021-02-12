@@ -1,31 +1,18 @@
 import React from "react";
 
-
 function Modal(props) {
-
-
   return (
     <div>
-    {props.isVisible && (
-    <div
-    id="myModal"
-    className="modal--active"
-
-    onClick={props.onOutsideClick}
-  >
-    <span className="close" onClick={props.onCloseModal}>
-      &times;
-    </span>
-    <img
-      id="modalimg"
-      className="modal-content"
-      src={props.img}
-     
-    />
-  </div>
-    )}
+      {props.isVisible && (
+        <div className="modal" onClick={props.onOutsideClick}>
+          <span className="modal__close" onClick={props.onCloseModal}>
+            &times;
+          </span>
+          <img className="modal__content" src={props.img} />
+        </div>
+      )}
     </div>
-  )}
-    
+  );
+}
 
 export default Modal;

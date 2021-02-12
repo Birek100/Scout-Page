@@ -1,11 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-//import { createStore } from 'redux';
-//import { Provider } from 'react-redux';
-//import rootReducer from './reducers/reducer.jsx';
-import { useSelector, useDispatch } from 'react-redux';
-import { modalTrue, modalFalse } from './actions/action';
-
 
 import Header from "./components/header/header.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
@@ -35,73 +29,42 @@ import Post6 from "./components/posts/post6.jsx";
 import Post7 from "./components/posts/post7.jsx";
 import Post8 from "./components/posts/post8.jsx";
 
-//import Post9 from "./containers/container.jsx";
 import Post9 from "./components/posts/post9.jsx";
 
-//import { composeWithDevTools } from 'redux-devtools-extension';
-
-
-//const store = createStore(rootReducer, composeWithDevTools());
-//window.store = store;
-//<Provider store={store}></Provider>
-//<Route exact path="/post9" component={() => <Post9 {...this.props} />} />
-
-//class App extends Component {
-  //render() {
-
-
-    //console.log(this.props)
-    //const test = this.props
-
-    function App () {
-      const dispatch = useDispatch()
-      const modalOn = () => dispatch(modalTrue);
-       const modalOff = () => dispatch(modalFalse);
-      
-        
-       const modalState = useSelector(state => state.modalState)
-       console.log(modalState)
-
-    return (
-      
-      
-        <div className="app">
-        
-        <BrowserRouter>
-          <Header />
-          <Navbar />
-          <Route exact path="/" component={Main} />
-          <Route exact path="/kontakt" component={Kontakt} />
-          <Route exact path="/oboz" component={Oboz} />
-          <Route exact path="/dopobrania" component={DoPobrania} />
-          <Route exact path="/zuchy" component={Zuchy} />
-          <Route exact path="/harcerze" component={Harcerze} />
-          <Route exact path="/starsiharcerze" component={StarsiHarcerze} />
-          <Route exact path="/umundurowanie" component={Umundurowanie} />
-          <Route exact path="/sprawnosci" component={Sprawnosci} />
-          <Route exact path="/onas" component={Onas} />
-          <Route exact path="/druzyny" component={Druzyny} />
-          <Route exact path="/dlaharcerzy" component={DlaHarcerzy} />
-          <Route exact path="/dlarodzicow" component={DlaRodzicow} />
-          <Route exact path="/podatku" component={Podatku} />
-          <Route exact path="/wedrownicy" component={Wedrownicy} />
-          <Route exact path="/post1" component={Post1} />
-          <Route exact path="/post2" component={Post2} />
-          <Route exact path="/post3" component={Post3} />
-          <Route exact path="/post4" component={Post4} />
-          <Route exact path="/post5" component={Post5} />
-          <Route exact path="/post6" component={Post6} />
-          <Route exact path="/post7" component={Post7} />
-          <Route exact path="/post8" component={Post8} />
-          <Route exact path="/post9" component={Post9} />
-          <Links />
-          <Footer />
-          </BrowserRouter>
-          
-        </div>
-       
-      
-    );
-  //}
+function App() {
+  return (
+    <div className="app">
+      <BrowserRouter>
+        <Header />
+        <Navbar />
+        <Route exact path="/" component={Main} />
+        <Route exact path="/kontakt" component={Kontakt} />
+        <Route exact path="/oboz" component={Oboz} />
+        <Route exact path="/dopobrania" component={DoPobrania} />
+        <Route exact path="/zuchy" component={Zuchy} />
+        <Route exact path="/harcerze" component={Harcerze} />
+        <Route exact path="/starsiharcerze" component={StarsiHarcerze} />
+        <Route exact path="/umundurowanie" component={Umundurowanie} />
+        <Route exact path="/sprawnosci" component={Sprawnosci} />
+        <Route exact path="/onas" component={Onas} />
+        <Route exact path="/druzyny" component={Druzyny} />
+        <Route exact path="/dlaharcerzy" component={DlaHarcerzy} />
+        <Route exact path="/dlarodzicow" component={DlaRodzicow} />
+        <Route exact path="/podatku" component={Podatku} />
+        <Route exact path="/wedrownicy" component={Wedrownicy} />
+        <Route exact path="/post1" component={Post1} />
+        <Route exact path="/post2" component={Post2} />
+        <Route exact path="/post3" component={Post3} />
+        <Route exact path="/post4" component={Post4} />
+        <Route exact path="/post5" component={Post5} />
+        <Route exact path="/post6" component={Post6} />
+        <Route exact path="/post7" component={Post7} />
+        <Route exact path="/post8" component={Post8} />
+        <Route exact path="/post9" component={Post9} />
+        <Links />
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
 }
 export default App;
