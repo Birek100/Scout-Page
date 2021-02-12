@@ -1,48 +1,46 @@
 import React, { useState, useCallback, useRef, useEffect } from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { modalTrue, modalFalse } from '../../actions/action';
+import Modal from '../modal/modal.jsx'
+
+
 
 function Post9() {
-  const imgRef = useRef(null);
-  const modalRef = useRef(null);
-  const modalImgRef = useRef(null);
+ 
+  const dispatch = useDispatch()
+      const modalOn = () => dispatch(modalTrue()); 
+       const modalOff = () => dispatch(modalFalse()); 
+       const modalState = useSelector(state => state.modalState) 
 
-  const [modalState, setModalState] = useState(false);
-  const [imgState, setImgState] = useState(null);
-  const openModal = () => {
-    console.log(imgRef.current.currentSrc);
-    setModalState(true);
-    setImgState(imgRef.current.currentSrc);
-  };
-  const closeModal = () => {
-    setModalState(false);
-    setImgState(null);
-  };
+       const imgRef = useRef(null);
+       const [imgState, setImgState] = useState(null);
 
-  const outsideClick = e => {
-    if (e.target.className === "modal--active") {
-      closeModal();
-    }
-  };
+       const openModal = () => {
+        setImgState(imgRef.current.currentSrc);
+        modalOn();
+      };
+      
+      const closeModal = () => {
+        modalOff();
+        setImgState(null);
+       };
+     
+       const outsideClick =  e => {
+         if (e.target.className === "modal--active") {
+           closeModal();
+         }
+       };
+  
 
+  
+  
   return (
+    
     <div className="wrapper">
       <div className="wrapper__inside">
-        <div
-          id="myModal"
-          className={modalState ? "modal--active" : "modal"}
-          ref={modalRef}
-          onClick={e => outsideClick(e)}
-        >
-          <span className="close" onClick={closeModal}>
-            &times;
-          </span>
-          <img
-            id="modalimg"
-            className="modal-content"
-            src={imgState}
-            ref={modalImgRef}
-          />
-        </div>
 
+        <Modal img={imgState} onOutsideClick={outsideClick} onCloseModal={closeModal} isVisible={modalState}/>
+          
         <div className="content">
           <div className="content__article">
             <h2>Zbiórka żywności 14 - 16 grudnia</h2>

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useCallback, useRef, useEffect } from "react";
 
 function Post8() {
+
+  
   return (
     <div className="wrapper">
       <div className="wrapper__inside">
