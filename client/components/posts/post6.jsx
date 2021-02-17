@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Post6() {
   return (
@@ -64,7 +64,7 @@ function Post6() {
             <p>Karta próby na sprawność LALKARZ</p>
             <p>
               <a href="https://drive.google.com/file/d/1GerA_cmITnBS5eOc9Nm9W7GPyHAtlhcC/view?usp=sharing">
-                {" "}
+                {' '}
                 POBIERZ
               </a>
             </p>

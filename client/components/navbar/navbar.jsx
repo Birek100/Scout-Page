@@ -1,19 +1,22 @@
-import React, { useState, useCallback, useEffect } from "react";
-import { Link } from "react-router-dom";
-import * as responsivenessQueries from "../../queries/responsiveness";
-import * as navbarQueries from "./queries";
+import React, { useState, useCallback, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import * as responsivenessQueries from '../../queries/responsiveness';
+import * as navbarQueries from './queries';
 
-const SUBMENU = ["closed", "druzyny", "dlaharcerzy", "dlarodzicow"];
+const SUBMENU = ['closed', 'druzyny', 'dlaharcerzy', 'dlarodzicow'];
 
 function Navbar() {
+  /* eslint-disable no-unused-vars */
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth
   });
 
   const [isExpanded, setIsExpanded] = useState(false);
+  const [menu, setMenu] = useState(SUBMENU[0]);
+
   const expandMenu = useCallback(() => {
-    setIsExpanded(s => !s);
+    setIsExpanded((s) => !s);
   }, [setIsExpanded]);
 
   const closeMenu = useCallback(() => {
@@ -21,24 +24,20 @@ function Navbar() {
     setMenu(SUBMENU[0]);
   }, [setIsExpanded]);
 
-  const [menu, setMenu] = useState(SUBMENU[0]);
-
   const menu1 = useCallback(
-    e => {
+    (e) => {
       e.preventDefault();
-      if (menu != SUBMENU[1]) {
+      if (menu !== SUBMENU[1]) {
         setMenu(SUBMENU[1]);
-        console.log(menu);
       } else {
         setMenu(SUBMENU[0]);
-        console.log(menu);
       }
     },
     [menu]
   );
 
   const menu2 = useCallback(
-    e => {
+    (e) => {
       e.preventDefault();
       if (menu !== SUBMENU[2]) {
         setMenu(SUBMENU[2]);
@@ -50,7 +49,7 @@ function Navbar() {
   );
 
   const menu3 = useCallback(
-    e => {
+    (e) => {
       e.preventDefault();
       if (menu !== SUBMENU[3]) {
         setMenu(SUBMENU[3]);
@@ -68,9 +67,9 @@ function Navbar() {
         width: window.innerWidth
       });
     }
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     handleResize();
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, [window.innerWidth]);
 
   return (
@@ -82,8 +81,7 @@ function Navbar() {
             <Link
               className="nav__link"
               to="/"
-              onClick={responsivenessQueries.isMobile() ? closeMenu : null}
-            >
+              onClick={responsivenessQueries.isMobile() ? closeMenu : null}>
               STRONA GŁÓWNA
             </Link>
           </li>
@@ -91,8 +89,7 @@ function Navbar() {
             <Link
               className="nav__link"
               to="/oboz"
-              onClick={responsivenessQueries.isMobile() ? closeMenu : null}
-            >
+              onClick={responsivenessQueries.isMobile() ? closeMenu : null}>
               OBÓZ
             </Link>
           </li>
@@ -100,8 +97,7 @@ function Navbar() {
             <Link
               className="nav__link"
               to="/druzyny"
-              onClick={responsivenessQueries.isMobile() ? menu1 : null}
-            >
+              onClick={responsivenessQueries.isMobile() ? menu1 : null}>
               DRUŻYNY
             </Link>
             {((navbarQueries.isOpened(SUBMENU[1], menu) &&
@@ -114,8 +110,7 @@ function Navbar() {
                     to="/zuchy"
                     onClick={
                       responsivenessQueries.isMobile() ? closeMenu : null
-                    }
-                  >
+                    }>
                     ZUCHY
                   </Link>
                 </li>
@@ -125,8 +120,7 @@ function Navbar() {
                     to="/harcerze"
                     onClick={
                       responsivenessQueries.isMobile() ? closeMenu : null
-                    }
-                  >
+                    }>
                     HARCERZE
                   </Link>
                 </li>
@@ -136,8 +130,7 @@ function Navbar() {
                     to="/starsiharcerze"
                     onClick={
                       responsivenessQueries.isMobile() ? closeMenu : null
-                    }
-                  >
+                    }>
                     HARCERZE STARSI
                   </Link>
                 </li>
@@ -153,8 +146,7 @@ function Navbar() {
             <Link
               className="nav__link"
               to="dlaharcerzy"
-              onClick={responsivenessQueries.isMobile() ? menu2 : null}
-            >
+              onClick={responsivenessQueries.isMobile() ? menu2 : null}>
               DLA HARCERZY
             </Link>
             {((navbarQueries.isOpened(SUBMENU[2], menu) &&
@@ -167,8 +159,7 @@ function Navbar() {
                     to="/umundurowanie"
                     onClick={
                       responsivenessQueries.isMobile() ? closeMenu : null
-                    }
-                  >
+                    }>
                     UMUNDUROWANIE
                   </Link>
                 </li>
@@ -178,16 +169,14 @@ function Navbar() {
                     to="/sprawnosci"
                     onClick={
                       responsivenessQueries.isMobile() ? closeMenu : null
-                    }
-                  >
+                    }>
                     STOPNIE I SPRAWNOŚCI
                   </Link>
                 </li>
                 <li className="nav__item">
                   <a
                     className="nav__link"
-                    href="https://gkzhp-my.sharepoint.com/:f:/g/personal/aleksandra_szklarczyk_zhp_net_pl/EmbkaBfPErhGvQUwIrLy0cgBIbPFJuYhmbAFl3VNzLtY-w?e=kpTzpi"
-                  >
+                    href="https://gkzhp-my.sharepoint.com/:f:/g/personal/aleksandra_szklarczyk_zhp_net_pl/EmbkaBfPErhGvQUwIrLy0cgBIbPFJuYhmbAFl3VNzLtY-w?e=kpTzpi">
                     ROZKAZY
                   </a>
                 </li>
@@ -197,8 +186,7 @@ function Navbar() {
                     to="/dopobrania"
                     onClick={
                       responsivenessQueries.isMobile() ? closeMenu : null
-                    }
-                  >
+                    }>
                     DO POBRANIA
                   </Link>
                 </li>
@@ -209,8 +197,7 @@ function Navbar() {
             <Link
               className="nav__link"
               to="dlarodzicow"
-              onClick={responsivenessQueries.isMobile() ? menu3 : null}
-            >
+              onClick={responsivenessQueries.isMobile() ? menu3 : null}>
               DLA RODZICÓW
             </Link>
             {((navbarQueries.isOpened(SUBMENU[3], menu) &&
@@ -223,8 +210,7 @@ function Navbar() {
                     to="/onas"
                     onClick={
                       responsivenessQueries.isMobile() ? closeMenu : null
-                    }
-                  >
+                    }>
                     O NAS
                   </Link>
                 </li>
@@ -234,8 +220,7 @@ function Navbar() {
                     to="podatku"
                     onClick={
                       responsivenessQueries.isMobile() ? closeMenu : null
-                    }
-                  >
+                    }>
                     1% PODATKU
                   </Link>
                 </li>
@@ -246,8 +231,7 @@ function Navbar() {
             <Link
               className="nav__link"
               to="/kontakt"
-              onClick={responsivenessQueries.isMobile() ? closeMenu : null}
-            >
+              onClick={responsivenessQueries.isMobile() ? closeMenu : null}>
               KONTAKT
             </Link>
           </li>

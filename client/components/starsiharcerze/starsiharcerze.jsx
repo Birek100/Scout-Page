@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 function StarsiHarcerze() {
   return (
     <div className="wrapper">
       <div className="wrapper__inside">
         <div className="content">
-          <h1 className="content__header">4 DSH "Ogniste płomyki"</h1>
+          <h1 className="content__header">4 DSH &quot;Ogniste płomyki&quot;</h1>
           <div className="content__image">
             <img src="./static/images/ogniste.jpg" />
           </div>
@@ -56,7 +56,7 @@ function StarsiHarcerze() {
               <a
                 href="https://drive.google.com/file/d/1grl4C1_cOt2RZfedJYAtTWtksYq-tWbB/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Karta próby pionierka/odkrywca pdf
               </a>
             </p>
@@ -64,7 +64,7 @@ function StarsiHarcerze() {
               <a
                 href="https://drive.google.com/file/d/1f8NM1XMk0-RdwK0gb-CPmEjydR9GQrJO/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Karta próby pionierka/odkrywca doc
               </a>
             </p>
@@ -91,7 +91,7 @@ function StarsiHarcerze() {
             <a
               href="https://www.facebook.com/4-DSH-Ogniste-p%C5%82omyki-403828976451820/timeline/"
               target="_blank"
-            >
+              rel="noreferrer">
               <img src="./static/images/FB.png" />
             </a>
           </div>

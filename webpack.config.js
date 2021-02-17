@@ -1,25 +1,25 @@
-const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   entry: {
-    scripts: "./client/index.jsx",
-    css: "./client/styles.scss"
+    scripts: './client/index.jsx',
+    css: './client/styles.scss'
   },
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "[name].js"
+    path: path.resolve(__dirname, 'public'),
+    filename: '[name].js'
   },
   module: {
     rules: [
       {
         test: /\.js$|jsx/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: 'babel-loader',
         query: {
-          presets: ["@babel/preset-env", "@babel/preset-react"],
-          plugins: ["@babel/plugin-proposal-class-properties"]
+          presets: ['@babel/preset-env', '@babel/preset-react'],
+          plugins: ['@babel/plugin-proposal-class-properties']
         }
       },
       {
@@ -32,25 +32,25 @@ module.exports = {
               reloadAll: true
             }
           },
-          "css-loader",
-          "sass-loader"
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        loader: "file-loader"
+        loader: 'file-loader'
       },
       {
         test: /\.(woff|woff2|otf)$/,
         use: {
-          loader: "url-loader"
+          loader: 'url-loader'
         }
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles.css"
+      filename: 'styles.css'
     })
   ]
 };

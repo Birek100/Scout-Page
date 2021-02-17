@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 function Harcerze() {
   return (
     <div className="wrapper">
       <div className="wrapper__inside">
         <div className="content">
-          <h1 className="content__header">1 DH "Bór"</h1>
+          <h1 className="content__header">1 DH &quot;Bór&quot;</h1>
           <div className="content__article">
             <p>
               Drużyna harcerska skupia dzieci z klas 4 - 6. Zbiórki odbywają się
@@ -19,12 +19,12 @@ function Harcerze() {
 
           <div className="content__article">
             <p>
-              "Nazywamy się „Bór” ponieważ interesujemy się tematyką leśną,
+              &quot;Nazywamy się „Bór” ponieważ interesujemy się tematyką leśną,
               tropieniem zwierząt, wędrówkami, sztuką przetrwania w lesie.
               Uwielbiamy zajęcia terenowe, biegi patrolowe, szyfry, podchody,
               robienie szałasów. Do naszej obrzędowości należą: obrzędowe
               rozpoczęcie i zakończenie zbiórki, okrzyk, piosenka, plakietka
-              drużyny."
+              drużyny.&quot;
             </p>
           </div>
 
@@ -45,7 +45,7 @@ function Harcerze() {
             <a
               href="https://www.facebook.com/pages/1-DH-B%C3%B3r/665888993507238?fref=ts"
               target="_blank"
-            >
+              rel="noreferrer">
               <img src="./static/images/FB.png" />
             </a>
           </div>

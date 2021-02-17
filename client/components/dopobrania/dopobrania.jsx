@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function DoPobrania() {
   return (
@@ -12,7 +12,7 @@ function DoPobrania() {
               <a
                 href="https://work.zhp.pl/wp-content/uploads/2020/09/ZHP_Oswiadczenie_niepelnoletni_29_09_2020.pdf"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Oświadczenie_niepełnoletni.pdf
               </a>
             </p>
@@ -20,7 +20,7 @@ function DoPobrania() {
               <a
                 href="https://work.zhp.pl/wp-content/uploads/2020/09/ZHP_Oswiadczenie_pelnoletni_29_09_2020.pdf"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Oświadczenie_niepełnoletni.pdf
               </a>
             </p>
@@ -31,7 +31,7 @@ function DoPobrania() {
               <a
                 href="https://drive.google.com/file/d/1tQp6k_nT8pFLkqnBlj5YWZN_7Bf2Nzia/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Próba naramiennik
               </a>
             </p>
@@ -42,7 +42,7 @@ function DoPobrania() {
               <a
                 href="https://drive.google.com/file/d/1nZviTQyhBBX99qOuVId1ZdzN_Hjwzvnr/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Sprawności harcerskie zestaw podstawowy
               </a>
             </p>
@@ -50,7 +50,7 @@ function DoPobrania() {
               <a
                 href="https://drive.google.com/file/d/1pD_tK_wv4iQrF1a2PbUZ_7AYmNxn3pIP/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Sprawności harcerskie zestaw uzupełniający
               </a>
             </p>
@@ -58,7 +58,7 @@ function DoPobrania() {
               <a
                 href="https://drive.google.com/file/d/1dDWpvLEnxcId1FejgiaJ6lzQ-PhBl9sK/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Sprawności zuchowe indywidualne
               </a>
             </p>
@@ -69,7 +69,7 @@ function DoPobrania() {
               <a
                 href="https://drive.google.com/file/d/1G8961ByPiESChCSUTddURuZFJDfkPzSx/view"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Regulamin mundurowy
               </a>
             </p>

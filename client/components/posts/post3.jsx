@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Post3() {
   return (
@@ -15,7 +15,7 @@ function Post3() {
             <p>Zapraszamy na zbiórki drużyn na platformie Zoom.</p>
             <p>
               W razie problemów z logowaniem prosimy o kontakt z drużynowymi.
-              Polecamy aby dołączać do spotkań z komputerów bądź laptopów.{" "}
+              Polecamy aby dołączać do spotkań z komputerów bądź laptopów.{' '}
             </p>
           </div>
 

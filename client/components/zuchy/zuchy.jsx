@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Zuchy() {
   return (
@@ -6,7 +6,7 @@ function Zuchy() {
       <div className="wrapper__inside">
         <div className="content">
           <h1 className="content__header">
-            1 GZ "Przyjaciele Bajkowej Akademii"
+            1 GZ &quot;Przyjaciele Bajkowej Akademii&quot;
           </h1>
           <div className="content__article">
             <p>
@@ -31,7 +31,7 @@ function Zuchy() {
             <a
               href="https://www.facebook.com/1GZPrzyjacieleBajkowejAkademii"
               target="_blank"
-            >
+              rel="noreferrer">
               <img src="./static/images/FB.png" />
             </a>
           </div>

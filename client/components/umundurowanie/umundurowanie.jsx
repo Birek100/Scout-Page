@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Umundurowanie() {
   return (
@@ -15,13 +15,13 @@ function Umundurowanie() {
           </div>
           <div className="content__article">
             <p>
-              Cały regulamin mundurowy można pobrać tutaj{" "}
+              Cały regulamin mundurowy można pobrać tutaj{' '}
               <a
                 href="https://drive.google.com/file/d/1G8961ByPiESChCSUTddURuZFJDfkPzSx/view?usp=sharing"
                 target="_blank"
-              >
-                {" "}
-                POBIERZ{" "}
+                rel="noreferrer">
+                {' '}
+                POBIERZ{' '}
               </a>
             </p>
           </div>
@@ -33,19 +33,19 @@ function Umundurowanie() {
               przykładowych składnic, ale w Internecie jest ich bardzo dużo:
             </p>
             <p>
-              Woda Góry Las -{" "}
+              Woda Góry Las -{' '}
               <a href="https://www.wgl.pl/">https://www.wgl.pl/</a>
             </p>
             <p>
-              Centralna Składnica Harcerska 4 Żywiołu -{" "}
+              Centralna Składnica Harcerska 4 Żywiołu -{' '}
               <a href="https://4zywioly.pl/">https://4zywioly.pl/</a>
             </p>
             <p>
-              Squadnica Harcerska -{" "}
+              Squadnica Harcerska -{' '}
               <a href="https://sqadnica.pl/">https://sqadnica.pl/</a>
             </p>
             <p>
-              SKAUT Składnica Harcerska -{" "}
+              SKAUT Składnica Harcerska -{' '}
               <a href="https://skladnicaharcerska.pl/">
                 https://skladnicaharcerska.pl/
               </a>
@@ -68,10 +68,10 @@ function Umundurowanie() {
           </div>
           <div className="content__article">
             <p>
-              2. <span className="bold">Spódnica mundurowa</span> wg wzoru ZHP{" "}
+              2. <span className="bold">Spódnica mundurowa</span> wg wzoru ZHP{' '}
             </p>
             <p>
-              lub <span className="bold">Spodenki mundurowe</span> wg wzoru ZHP{" "}
+              lub <span className="bold">Spodenki mundurowe</span> wg wzoru ZHP{' '}
             </p>
             <span className="bold">
               <p>
@@ -83,7 +83,7 @@ function Umundurowanie() {
             <p>
               3. <span className="bold">Spodnie długie</span> granatowe.
               Dopuszcza się noszenie długich spodni czarnych, granatowych,
-              jeansy tylko ciemno niebieskie jednolite i bez zdobień.{" "}
+              jeansy tylko ciemno niebieskie jednolite i bez zdobień.{' '}
             </p>
             <p>
               <span className="red bold">Niedopuszczalne są:</span>
@@ -106,10 +106,10 @@ function Umundurowanie() {
               (harcerki czarny, harcerze zielony)
             </p>
             <p>
-              Pas ma być w szlufkach w spodniach i jest{" "}
+              Pas ma być w szlufkach w spodniach i jest{' '}
               <span className="bold">
                 obowiązkowo noszony do bluzy mundurowej.
-              </span>{" "}
+              </span>{' '}
             </p>
           </div>
           <div className="content__article">
@@ -134,7 +134,7 @@ function Umundurowanie() {
           </div>
           <div className="content__article">
             <p>
-              7. Ciemne{" "}
+              7. Ciemne{' '}
               <span className="bold">buty trekingowe lub adidasy</span> (np.
               brązowe, czarne)
             </p>
@@ -180,10 +180,10 @@ function Umundurowanie() {
           </div>
           <div className="content__article">
             <p>
-              Według regulaminu mundurowego{" "}
+              Według regulaminu mundurowego{' '}
               <span className="bold underline">
-                "Każdy członek ZHP ma obowiązek dbania o mundur i utrzymywania
-                go w należytym porządku."
+                &quot;Każdy członek ZHP ma obowiązek dbania o mundur i
+                utrzymywania go w należytym porządku.&quot;
               </span>
             </p>
           </div>

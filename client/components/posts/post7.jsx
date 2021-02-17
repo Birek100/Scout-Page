@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Post7() {
   return (
@@ -32,7 +32,7 @@ function Post7() {
               <span className="bold">
                 6 grudnia o godz. 18:00 w okolicy harcówki specjalny punkt gry
                 tylko dla zuchów:
-              </span>{" "}
+              </span>{' '}
               zuchy przychodzą z rodzicami na ostatnią przygodę tego dnia.
             </p>
           </div>
@@ -44,13 +44,13 @@ function Post7() {
             <p>- zainstalowana aplikacja Actionbound</p>
             <p>
               Aplikację Actionbound można za darmo pobrać ze Sklepu Play i App
-              Store. Działa zarówno na Androidzie jak i na iOS.{" "}
+              Store. Działa zarówno na Androidzie jak i na iOS.{' '}
             </p>
             <p>
               Uwaga: gra pojawi się w aplikacji w sobotę rano. Poniżej pojawi
               się też kod QR do zeskanowania w aplikacji w celu uruchomienia.
-              Aby rozpocząć grę, można też kliknąć opcję "Bound niedaleko" i
-              wybrać grę, która na mapie pojawi się w Chełmku.
+              Aby rozpocząć grę, można też kliknąć opcję &quot;Bound
+              niedaleko&quot; i wybrać grę, która na mapie pojawi się w Chełmku.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ function Post7() {
             <h2>ROZPOCZNIJ GRĘ!</h2>
             <p>
               Zeskanują w aplikacji poniższy kod lub znajdź grę na mapie
-              klikając 'Bound niedaleko".
+              klikając &quot;Bound niedaleko&quot;.
             </p>
           </div>
           <div className="content__image">

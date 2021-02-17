@@ -3,9 +3,9 @@ const initState = {
 };
 const rootReducer = (state = initState, action) => {
   switch (action.type) {
-    case "MODALTRUE":
+    case 'MODALTRUE':
       return { ...state, modalState: true };
-    case "MODALFALSE":
+    case 'MODALFALSE':
       return { ...state, modalState: false };
     default:
       return state;

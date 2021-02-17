@@ -1,14 +1,13 @@
-import React, { useState, useCallback, useRef, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { modalTrue, modalFalse } from "../../actions/action";
-import Modal from "../modal/modal.jsx";
-//import { openModal, closeModal, outsideClick } from './queries.jsx';
+import React, { useState, useCallback, useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { modalTrue, modalFalse } from '../../actions/action';
+import Modal from '../modal/modal.jsx';
 
 function Post9() {
   const dispatch = useDispatch();
   const modalOn = () => dispatch(modalTrue());
   const modalOff = () => dispatch(modalFalse());
-  const modalState = useSelector(state => state.modalState);
+  const modalState = useSelector((state) => state.modalState);
 
   const imgRef = useRef(null);
   const [imgState, setImgState] = useState(null);
@@ -23,8 +22,8 @@ function Post9() {
     modalOff();
   }, [imgState, modalState]);
 
-  const outsideClick = e => {
-    if (e.target.className === "modal") {
+  const outsideClick = (e) => {
+    if (e.target.className === 'modal') {
       closeModal();
     }
   };
@@ -72,7 +71,7 @@ function Post9() {
           <div className="content__article">
             <p>
               Decyzją organizatora w konkursie mogą brać udział również dzieci
-              ze świetlic działających pod patronatem ZHP.{" "}
+              ze świetlic działających pod patronatem ZHP.{' '}
             </p>
           </div>
           <div className="content__article">

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Onas() {
   return (
@@ -95,7 +95,7 @@ function Onas() {
               sprawności i innych odznaczeń. Cały mundurowy ekwipunek można
               kupić w składnicy harcerskiej – takim sklepie dla harcerzy. Mundur
               to oznaka naszej przynależności do ZHP i jest on ważną rzeczą dla
-              każdego harcerza.{" "}
+              każdego harcerza.{' '}
             </p>
           </div>
           <div className="content__article">

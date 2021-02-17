@@ -1,6 +1,6 @@
 export const modalTrue = () => ({
-  type: "MODALTRUE"
+  type: 'MODALTRUE'
 });
 export const modalFalse = () => ({
-  type: "MODALFALSE"
+  type: 'MODALFALSE'
 });

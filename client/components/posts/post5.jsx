@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Post5() {
   return (
@@ -18,9 +18,9 @@ function Post5() {
 
           <div className="content__article">
             <p>
-              Zapraszamy serdecznie do udziału w festiwalu piosenki "Trzepak"
-              organizowanym przez Związek Drużyn Chełmek im. "Bohaterów
-              Westerplatte" oraz komendę naszego hufca.
+              Zapraszamy serdecznie do udziału w festiwalu piosenki
+              &quot;Trzepak&quot; organizowanym przez Związek Drużyn Chełmek im.
+              &quot;Bohaterów Westerplatte&quot; oraz komendę naszego hufca.
             </p>
           </div>
 

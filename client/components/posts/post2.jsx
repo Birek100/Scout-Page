@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Post2() {
   return (
@@ -26,7 +26,7 @@ function Post2() {
           <div className="content__article">
             <p>
               Wszystkie informacje i wytyczne są wciąż dostępne na oficjalnej
-              stronie{" "}
+              stronie{' '}
               <a href="https://strony.zhp.pl/wracamy/">
                 https://zhp.pl/wracamy/
               </a>

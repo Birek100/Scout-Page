@@ -1,30 +1,30 @@
-@import "styles/variables";
-@import "styles/content";
-@import "styles/subnav";
-@import "styles/modal";
-@import "components/header/header";
-@import "components/navbar/navbar";
-@import "components/main/main";
-@import "components/links/links";
-@import "components/footer/footer";
+@import 'styles/variables';
+@import 'styles/content';
+@import 'styles/subnav';
+@import 'styles/modal';
+@import 'components/header/header';
+@import 'components/navbar/navbar';
+@import 'components/main/main';
+@import 'components/links/links';
+@import 'components/footer/footer';
 
 @font-face {
-  font-family: "Museo300";
-  src: url("./fonts/Museo-Regular-300.otf");
+  font-family: 'Museo300';
+  src: url('./fonts/Museo-Regular-300.otf');
 }
 @font-face {
-  font-family: "Museo500";
-  src: url("./fonts/Museo-Regular-500.otf");
+  font-family: 'Museo500';
+  src: url('./fonts/Museo-Regular-500.otf');
 }
 @font-face {
-  font-family: "Museo700";
-  src: url("./fonts/Museo-Regular-700.otf");
+  font-family: 'Museo700';
+  src: url('./fonts/Museo-Regular-700.otf');
 }
 
 html,
 body {
   width: 100%;
   margin: 0px;
-  font-family: "Museo300";
+  font-family: 'Museo300';
   //background-color: #f2f2f2;
 }

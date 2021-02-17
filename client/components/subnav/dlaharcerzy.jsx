@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function DlaHarcerzy() {
   return (
@@ -21,8 +21,7 @@ function DlaHarcerzy() {
             <div className="subnav__article">
               <a
                 className="subnav__link"
-                href="https://gkzhp-my.sharepoint.com/:f:/g/personal/aleksandra_szklarczyk_zhp_net_pl/EmbkaBfPErhGvQUwIrLy0cgBIbPFJuYhmbAFl3VNzLtY-w?e=kpTzpi"
-              >
+                href="https://gkzhp-my.sharepoint.com/:f:/g/personal/aleksandra_szklarczyk_zhp_net_pl/EmbkaBfPErhGvQUwIrLy0cgBIbPFJuYhmbAFl3VNzLtY-w?e=kpTzpi">
                 ROZKAZY
               </a>
             </div>

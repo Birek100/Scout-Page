@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function Modal(props) {
   return (
@@ -14,5 +15,11 @@ function Modal(props) {
     </div>
   );
 }
+Modal.propTypes = {
+  isVisible: PropTypes.bool,
+  onOutsideClick: PropTypes.func,
+  onCloseModal: PropTypes.func,
+  img: PropTypes.string
+};
 
 export default Modal;

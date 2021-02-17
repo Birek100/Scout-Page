@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Sprawnosci() {
   return (
@@ -37,7 +37,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/1nZviTQyhBBX99qOuVId1ZdzN_Hjwzvnr/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Sprawności harcerskie zestaw podstawowy
               </a>
             </p>
@@ -45,7 +45,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/1pD_tK_wv4iQrF1a2PbUZ_7AYmNxn3pIP/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Sprawności harcerskie zestaw uzupełniający
               </a>
             </p>
@@ -53,7 +53,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/1dDWpvLEnxcId1FejgiaJ6lzQ-PhBl9sK/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Sprawności zuchowe indywidualne
               </a>
             </p>
@@ -136,7 +136,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/1UmXSvnRsNnIL8ogYEVGM-o9FMCb1AhjV/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Dekoratorka/Dekorator**
               </a>
             </p>
@@ -144,7 +144,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/1MuiBC_2ivO7hSS41eyR-3-h-mRcWkmFM/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Plastyczka/Plastyk*
               </a>
             </p>
@@ -152,7 +152,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/1t6bXNlVO8z3hKcH_25v1e9rlgVvUIwpI/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Projektant/Projektantka mody**
               </a>
             </p>
@@ -160,7 +160,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/15bbvSVrHEvwAeNjt5sh-rAs0zglN8RwI/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Gospodyni/Gospodarz**
               </a>
             </p>
@@ -169,7 +169,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/1pnQuGyZciwpVdBjnxYUPyyEyUN98ceHM/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Miłośniczka filmu/Miłośnik filmu
               </a>
             </p>
@@ -177,7 +177,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/1NlspqntK4zG0ONKKYKh5t4UeW99P_Agm/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Podróżnik/Podróżniczka po Polsce
               </a>
             </p>
@@ -185,7 +185,7 @@ function Sprawnosci() {
               <a
                 href="https://drive.google.com/file/d/1WAxThpal_ZqlMmuoAEpkNR-z3vSPbe6G/view?usp=sharing"
                 target="_blank"
-              >
+                rel="noreferrer">
                 Kuchmistrz
               </a>
             </p>
