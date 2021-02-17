@@ -45,7 +45,6 @@ function Post9() {
           <div className="content__image">
             <img
               src="./static/images/post_images/fotokonkurs.jpg"
-              id="myimg"
               ref={imgRef}
               onClick={openModal}
             />

@@ -6,10 +6,10 @@ function Modal(props) {
     <div>
       {props.isVisible && (
         <div className="modal" onClick={props.onOutsideClick}>
+          <img className="modal__content" src={props.img} />
           <span className="modal__close" onClick={props.onCloseModal}>
             &times;
           </span>
-          <img className="modal__content" src={props.img} />
         </div>
       )}
     </div>
