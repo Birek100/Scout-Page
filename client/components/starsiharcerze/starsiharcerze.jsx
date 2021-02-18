@@ -1,13 +1,48 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { modalTrue, modalFalse } from '../../actions/action';
+import Modal from '../modal/modal.jsx';
 
 function StarsiHarcerze() {
+  const dispatch = useDispatch();
+  const modalOn = () => dispatch(modalTrue());
+  const modalOff = () => dispatch(modalFalse());
+  const modalState = useSelector((state) => state.modalState);
+
+  const [imgState, setImgState] = useState(null);
+
+  const openModal = useCallback(
+    (e) => {
+      setImgState(e.target.src);
+      modalOn();
+    },
+    [imgState, modalState]
+  );
+
+  const closeModal = useCallback(() => {
+    setImgState(null);
+    modalOff();
+  }, [imgState, modalState]);
+
+  const outsideClick = (e) => {
+    if (e.target.className === 'modal') {
+      closeModal();
+    }
+  };
   return (
     <div className="wrapper">
       <div className="wrapper__inside">
+        <Modal
+          img={imgState}
+          onOutsideClick={outsideClick}
+          onCloseModal={closeModal}
+          isVisible={modalState}
+        />
+
         <div className="content">
           <h1 className="content__header">4 DSH &quot;Ogniste płomyki&quot;</h1>
           <div className="content__image">
-            <img src="./static/images/ogniste.jpg" />
+            <img src="./static/images/ogniste.jpg" onClick={openModal} />
           </div>
           <div className="content__article">
             <h2>Składki członkowskie - zmiany</h2>

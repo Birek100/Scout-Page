@@ -1,9 +1,43 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { modalTrue, modalFalse } from '../../actions/action';
+import Modal from '../modal/modal.jsx';
 
 function Umundurowanie() {
+  const dispatch = useDispatch();
+  const modalOn = () => dispatch(modalTrue());
+  const modalOff = () => dispatch(modalFalse());
+  const modalState = useSelector((state) => state.modalState);
+
+  const [imgState, setImgState] = useState(null);
+
+  const openModal = useCallback(
+    (e) => {
+      setImgState(e.target.src);
+      modalOn();
+    },
+    [imgState, modalState]
+  );
+
+  const closeModal = useCallback(() => {
+    setImgState(null);
+    modalOff();
+  }, [imgState, modalState]);
+
+  const outsideClick = (e) => {
+    if (e.target.className === 'modal') {
+      closeModal();
+    }
+  };
   return (
     <div className="wrapper">
       <div className="wrapper__inside">
+        <Modal
+          img={imgState}
+          onOutsideClick={outsideClick}
+          onCloseModal={closeModal}
+          isVisible={modalState}
+        />
         <div className="content">
           <h1 className="content__header">Mundury</h1>
           <div className="content__article">
@@ -54,7 +88,7 @@ function Umundurowanie() {
           <div className="content__article">
             <h2>MUNDUR HARCERSKI i ZUCHOWY</h2>
             <div className="content__image">
-              <img src="./static/images/mundury.jpg" />
+              <img src="./static/images/mundury.jpg" onClick={openModal} />
             </div>
             <p>
               1. <span className="bold">Bluza mundurowa</span> wg wzoru ZHP.
@@ -162,21 +196,21 @@ function Umundurowanie() {
             <p>(analogicznie na mundurze męskim)</p>
           </div>
           <div className="content__image">
-            <img src="./static/images/mununu.png" />
+            <img src="./static/images/mununu.png" onClick={openModal} />
           </div>
           <div className="content__article">
             <h2>ROZMIESZCZENIE ODZNAK i PLAKIETEK NA MUNDURZE ZUCHOWYM</h2>
             <p>(analogicznie na mundurze żeńskim)</p>
           </div>
           <div className="content__image">
-            <img src="./static/images/zululu.png" />
+            <img src="./static/images/zululu.png" onClick={openModal} />
           </div>
           <div className="content__article">
             <h2>CHUSTA</h2>
             <p>Chustę nosi się pod kołnierzem (nie wkładamy jej pod pagony!)</p>
           </div>
           <div className="content__image">
-            <img src="./static/images/chuchu.png" />
+            <img src="./static/images/chuchu.png" onClick={openModal} />
           </div>
           <div className="content__article">
             <p>

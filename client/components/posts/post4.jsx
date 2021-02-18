@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { modalTrue, modalFalse } from '../../actions/action';
 import Modal from '../modal/modal.jsx';
@@ -9,13 +9,15 @@ function Post4() {
   const modalOff = () => dispatch(modalFalse());
   const modalState = useSelector((state) => state.modalState);
 
-  const imgRef = useRef(null);
   const [imgState, setImgState] = useState(null);
 
-  const openModal = useCallback(() => {
-    setImgState(imgRef.current.currentSrc);
-    modalOn();
-  }, [imgState, modalState]);
+  const openModal = useCallback(
+    (e) => {
+      setImgState(e.target.src);
+      modalOn();
+    },
+    [imgState, modalState]
+  );
 
   const closeModal = useCallback(() => {
     setImgState(null);
@@ -44,7 +46,6 @@ function Post4() {
           <div className="content__image">
             <img
               src="./static/images/post_images/11grainfo.jpg"
-              ref={imgRef}
               onClick={openModal}
             />
           </div>

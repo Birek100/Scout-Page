@@ -1,9 +1,45 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { modalTrue, modalFalse } from '../../actions/action';
+import Modal from '../modal/modal.jsx';
 
 function Sprawnosci() {
+  const dispatch = useDispatch();
+  const modalOn = () => dispatch(modalTrue());
+  const modalOff = () => dispatch(modalFalse());
+  const modalState = useSelector((state) => state.modalState);
+
+  const [imgState, setImgState] = useState(null);
+
+  const openModal = useCallback(
+    (e) => {
+      setImgState(e.target.src);
+      modalOn();
+    },
+    [imgState, modalState]
+  );
+
+  const closeModal = useCallback(() => {
+    setImgState(null);
+    modalOff();
+  }, [imgState, modalState]);
+
+  const outsideClick = (e) => {
+    if (e.target.className === 'modal') {
+      closeModal();
+    }
+  };
+
   return (
     <div className="wrapper">
       <div className="wrapper__inside">
+        <Modal
+          img={imgState}
+          onOutsideClick={outsideClick}
+          onCloseModal={closeModal}
+          isVisible={modalState}
+        />
+
         <div className="content">
           <h1 className="content__header">Sprawności harcerskie i zuchowe</h1>
           <div className="content__article">
@@ -92,7 +128,7 @@ function Sprawnosci() {
             </p>
           </div>
           <div className="content__image">
-            <img src="./static/images/sprawnosci.png" />
+            <img src="./static/images/sprawnosci.png" onClick={openModal} />
           </div>
           <div className="content__article">
             <h2>Jak przyszywamy sprawności?</h2>
@@ -104,7 +140,7 @@ function Sprawnosci() {
             <p>Sprawności przyszywamy po trzy w rzędzie lub w kółko.</p>
           </div>
           <div className="content__image">
-            <img src="./static/images/zuuuch.jpg" />
+            <img src="./static/images/zuuuch.jpg" onClick={openModal} />
           </div>
           <div className="content__article">
             <p>
@@ -114,7 +150,7 @@ function Sprawnosci() {
             </p>
           </div>
           <div className="content__image">
-            <img src="./static/images/zuchy.jpg" />
+            <img src="./static/images/zuchy.jpg" onClick={openModal} />
           </div>
           <div className="content__article">
             <p>Sprawności harcerskie</p>
@@ -127,7 +163,7 @@ function Sprawnosci() {
             </p>
           </div>
           <div className="content__image">
-            <img src="./static/images/sprawnosci2.png" />
+            <img src="./static/images/sprawnosci2.png" onClick={openModal} />
           </div>
           <div className="content__article">
             <h2>Gotowe próby na sprawności</h2>
