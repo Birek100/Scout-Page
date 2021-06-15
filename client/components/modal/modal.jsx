@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Modal(props) {
+ const {isVisible, onOutsideClick, onCloseModal, img} = props
   return (
     <div>
-      {props.isVisible && (
-        <div className="modal" onClick={props.onOutsideClick}>
-          <img className="modal__content" src={props.img} />
-          <span className="modal__close" onClick={props.onCloseModal}>
+      {isVisible && (
+        <div className="modal" onClick={onOutsideClick}>
+          <img className="modal__content" src={img} />
+          <span className="modal__close" onClick={onCloseModal}>
             &times;
           </span>
         </div>
