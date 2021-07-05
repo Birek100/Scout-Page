@@ -1,7 +1,7 @@
 .main {
   width: 80%;
   float: left;
-  background-color: #f2f2f2;
+  background-color: $gray-bright;
   min-height: 100%;
   margin-top: 0;
   &__posts {
@@ -15,7 +15,7 @@
     width: 30%;
     min-width: 220px;
     height: 350px;
-    margin: 10px;
+    margin: $margin-small;
     margin-bottom: 25px;
     overflow: hidden;
 
@@ -38,17 +38,20 @@
     min-height: 100%;
     height: auto;
   }
-
+  &__link {
+    text-decoration: none;
+  }
   &__header {
-    margin-top: 20px;
+    margin-top: $margin-medium;
     margin-left: 3%;
     margin-right: 3%;
+    color: black;
   }
   &__more {
     width: 200px;
     margin: auto;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: $margin-medium;
     &:hover {
       cursor: pointer;
     }

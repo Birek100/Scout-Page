@@ -11,7 +11,7 @@ function Main() {
     <div className="main">
       <div className="main__posts">
         <div className="main__post">
-          <Link to="/post9">
+          <Link className="main__link" to="/post9">
             <div className="main__image-container">
               <img
                 src="./static/images/post_images/fotokonkurs.jpg"
@@ -22,7 +22,7 @@ function Main() {
           </Link>
         </div>
         <div className="main__post">
-          <Link to="/post8">
+          <Link className="main__link" to="/post8">
             <div className="main__image-container">
               <img
                 src="./static/images/post_images/zbiorka_zywnosci.jpg"
@@ -33,7 +33,7 @@ function Main() {
           </Link>
         </div>
         <div className="main__post">
-          <Link to="/post7">
+          <Link className="main__link" to="/post7">
             <div className="main__image-container">
               <img
                 src="./static/images/post_images/mikolajkowy_bieg.png"
@@ -44,7 +44,7 @@ function Main() {
           </Link>
         </div>
         <div className="main__post">
-          <Link to="/post6">
+          <Link className="main__link" to="/post6">
             <div className="main__image-container">
               <img
                 src="./static/images/post_images/zbiorka_teatralna.png"
@@ -55,7 +55,7 @@ function Main() {
           </Link>
         </div>
         <div className="main__post">
-          <Link to="/post5">
+          <Link className="main__link" to="/post5">
             <div className="main__image-container">
               <img
                 src="./static/images/post_images/trzepak.jpg"
@@ -66,7 +66,7 @@ function Main() {
           </Link>
         </div>
         <div className="main__post">
-          <Link to="/post4">
+          <Link className="main__link" to="/post4">
             <div className="main__image-container">
               <img
                 src="./static/images/post_images/11grainfo.jpg"
@@ -84,7 +84,7 @@ function Main() {
         {mainIsExpanded && (
           <div className="main-posts">
             <div className="main__post">
-              <Link to="/post3">
+              <Link className="main__link" to="/post3">
                 <div className="main__image-container">
                   <img
                     src="./static/images/post_images/zbiorki_online.png"
@@ -95,7 +95,7 @@ function Main() {
               </Link>
             </div>
             <div className="main__post">
-              <Link to="/post2">
+              <Link className="main__link" to="/post2">
                 <div className="main__image-container">
                   <img
                     src="./static/images/post_images/powrot_zbiorek.jpg"
@@ -106,7 +106,7 @@ function Main() {
               </Link>
             </div>
             <div className="main__post">
-              <Link to="/post1">
+              <Link className="main__link" to="/post1">
                 <div className="main__image-container">
                   <img
                     src="./static/images/post_images/pierwsza_pomoc.jpg"

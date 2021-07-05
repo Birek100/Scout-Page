@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Modal(props) {
-  const {
-    isVisible, onOutsideClick, onCloseModal, img
-  } = props;
+  /* eslint-disable object-curly-newline */
+  const { isVisible, onOutsideClick, onCloseModal, img } = props;
+  /* eslint-enable object-curly-newline */
   return (
     <div>
       {isVisible && (
