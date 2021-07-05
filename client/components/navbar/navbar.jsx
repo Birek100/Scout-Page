@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import * as responsivenessQueries from '../../queries/responsiveness';
-import * as navbarQueries from './queries';
+import * as navbarQueries from '../../queries/navbar';
 
 const SUBMENU = ['closed', 'druzyny', 'dlaharcerzy', 'dlarodzicow'];
 
