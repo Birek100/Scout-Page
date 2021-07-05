@@ -23,6 +23,8 @@
 }
 @media (max-width: $responsivennes-mobile) {
   .header {
+    margin-left: 5%;
+    margin-right: 5%;
     &__title {
       font-size: 30px;
     }
