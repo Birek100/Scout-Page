@@ -1,4 +1,4 @@
-const MOBILE_BREAKPOINT = 745;
+const MOBILE_BREAKPOINT = 750;
 
 export const isMobile = () => window.innerWidth <= MOBILE_BREAKPOINT;
 

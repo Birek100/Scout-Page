@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Modal(props) {
- const {isVisible, onOutsideClick, onCloseModal, img} = props
+  const {
+    isVisible, onOutsideClick, onCloseModal, img
+  } = props;
   return (
     <div>
       {isVisible && (

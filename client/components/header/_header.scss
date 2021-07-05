@@ -21,7 +21,7 @@
     font-size: 40px;
   }
 }
-@media (max-width: 745px) {
+@media (max-width: $responsivennes-mobile) {
   .header {
     &__title {
       font-size: 30px;

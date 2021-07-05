@@ -1,7 +1,7 @@
 .wrapper {
   width: 80%;
   float: left;
-  background-color: #f2f2f2;
+  background-color: $gray-bright;
   min-height: 80%;
   margin-top: 0;
   &__inside {
@@ -36,7 +36,7 @@
     margin: $margin-large;
     line-height: 1.4;
     a {
-      color: #78a22f;
+      color: $green-scout;
     }
     h2 {
       margin-top: $margin-small;
@@ -48,7 +48,7 @@
     text-align: center;
     font-weight: bold;
     a {
-      color: #78a22f;
+      color: $green-scout;
     }
   }
   &__facebook {
