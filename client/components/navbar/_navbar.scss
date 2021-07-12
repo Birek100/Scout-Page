@@ -6,12 +6,12 @@
 .nav {
   display: flex;
   background-color: $gray-dark;
-  height: 50px;
+  height: $size-very-large;
   justify-content: space-between;
   position: relative;
 
   &__submenu {
-    margin-top: 50px;
+    margin-top: $size-very-large;
     display: none;
     position: absolute;
     background-color: $gray-dark;

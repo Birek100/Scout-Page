@@ -12,14 +12,14 @@ body {
   justify-content: center;
   text-align: center;
   &__content {
-    margin-top: $margin-large;
+    margin-top: $size-large;
     font-size: $font-content;
   }
   &__article {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: $size-very-large;
+    margin-bottom: $size-very-large;
     img {
-      padding: $margin-small;
+      padding: $size-small;
       &:hover {
         cursor: pointer;
       }

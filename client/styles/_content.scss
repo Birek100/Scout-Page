@@ -10,21 +10,21 @@
   }
 }
 .content {
-  padding: $margin-large;
+  padding: $size-large;
   background-color: white;
   text-align: left;
   font-size: $font-content;
   min-height: 80%;
 
   &__header {
-    margin: $margin-small;
+    margin: $size-small;
     text-align: center;
   }
 
   &__image {
     text-align: center;
-    margin-top: $margin-medium;
-    margin-bottom: $margin-medium;
+    margin-top: $size-medium;
+    margin-bottom: $size-medium;
     img {
       max-width: 80%;
       height: auto;
@@ -33,26 +33,28 @@
 
   &__article {
     display: block;
-    margin: $margin-large;
+    margin: $size-large;
     line-height: 1.4;
     a {
       color: $green-scout;
+      text-decoration: none;
     }
     h2 {
-      margin-top: $margin-small;
-      margin-bottom: $margin-small;
+      margin-top: $size-small;
+      margin-bottom: $size-small;
     }
   }
   &__back {
-    margin: $margin-very-large;
+    margin: $size-very-large;
     text-align: center;
     font-weight: bold;
     a {
       color: $green-scout;
+      text-decoration: none;
     }
   }
   &__facebook {
-    margin: $margin-large;
+    margin: $size-large;
     text-align: center;
     img {
       width: auto;

@@ -1,22 +1,22 @@
 .subnav {
-  padding: $margin-large;
+  padding: $size-large;
   background-color: white;
   text-align: center;
   font-size: $font-content;
   min-height: 80%;
 
   &__header {
-    margin: $margin-small;
+    margin: $size-small;
   }
   &__article {
     display: block;
-    margin: $margin-very-large;
+    margin: $size-very-large;
   }
   &__link {
-    font-size: 30px;
+    font-size: $size-large;
     color: $green-scout;
   }
   &__content {
-    margin-top: $margin-very-large;
+    margin-top: $size-very-large;
   }
 }
