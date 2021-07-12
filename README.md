@@ -1,6 +1,6 @@
 # Scout-Page
 
-ABOUT
+ABOUT 
 Here is project of scouts website.
 It was my first steps with flexbox and responsiveness.
 
