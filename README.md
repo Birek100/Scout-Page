@@ -24,3 +24,7 @@ npm run build - build project
 - REDUX
 - NODE.JS
 - EXPRES.JS
+
+### SCREENSHOTS:
+
+![scout1](https://user-images.githubusercontent.com/48009602/127779563-44d41d7f-646d-4a62-9970-7a3a8a3388dc.jpg)
